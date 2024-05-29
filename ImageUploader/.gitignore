@@ -1,5 +1,5 @@
-mono/*
-vs/*
+.mono/*
+.vs/*
 
 ImageUploader.Api/bin/*
 ImageUploader.Api/obj/*
