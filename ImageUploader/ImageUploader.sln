@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageUploader.Domain", "ImageUploader.Domain\ImageUploader.Domain.csproj", "{7ED8883C-8E09-4936-B54B-B1680C7227D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageUploader.Services", "ImageUploader.Services\ImageUploader.Services.csproj", "{00210440-A092-437E-90FF-3F472AD59E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageUploader.Tests", "ImageUploader.Tests\ImageUploader.Tests.csproj", "{C0CEDA39-50BE-4DB3-8ACE-C4D534881783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageUploader.Api", "ImageUploader.Api\ImageUploader.Api.csproj", "{B4E0E9B3-57E1-42E0-AA01-16B48F40E144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ED8883C-8E09-4936-B54B-B1680C7227D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED8883C-8E09-4936-B54B-B1680C7227D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED8883C-8E09-4936-B54B-B1680C7227D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED8883C-8E09-4936-B54B-B1680C7227D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00210440-A092-437E-90FF-3F472AD59E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00210440-A092-437E-90FF-3F472AD59E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00210440-A092-437E-90FF-3F472AD59E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00210440-A092-437E-90FF-3F472AD59E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0CEDA39-50BE-4DB3-8ACE-C4D534881783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0CEDA39-50BE-4DB3-8ACE-C4D534881783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0CEDA39-50BE-4DB3-8ACE-C4D534881783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0CEDA39-50BE-4DB3-8ACE-C4D534881783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4E0E9B3-57E1-42E0-AA01-16B48F40E144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E0E9B3-57E1-42E0-AA01-16B48F40E144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E0E9B3-57E1-42E0-AA01-16B48F40E144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E0E9B3-57E1-42E0-AA01-16B48F40E144}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

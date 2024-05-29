@@ -1,0 +1,14 @@
+mono/*
+vs/*
+
+ImageUploader.Api/bin/*
+ImageUploader.Api/obj/*
+
+ImageUploader.Domain/bin/*
+ImageUploader.Domain/obj/*
+
+ImageUploader.Services/bin/*
+ImageUploader.Services/obj/*
+
+ImageUploader.Tests/bin/*
+ImageUploader.Tests/obj/*
