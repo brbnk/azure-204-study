@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CosmosDb.Services\CosmosDb.Services.csproj" />
+    <ProjectReference Include="..\CosmosDb.Domain\CosmosDb.Domain.csproj" />
   </ItemGroup>
 
 </Project>
