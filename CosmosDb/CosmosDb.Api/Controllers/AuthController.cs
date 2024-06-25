@@ -1,7 +1,5 @@
-using CosmodeDb.Domain.Account;
 using CosmodeDb.Domain.Security.Interfaces;
 using CosmodeDb.Domain.Security.Requests;
-using CosmosDb.Domain.Security.Interfaces;
 using CosmosDb.Domain.Security.Requests;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,15 +7,19 @@ namespace CosmosDb.Api.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
-public sealed class AuthController(ITokenService tokenService, 
-                                   IRegisterHandler registerHandler,
-                                   ILoginHandler loginHandler) : ControllerBase
+public sealed class AuthController(IRegisterHandler registerHandler, ILoginHandler loginHandler) : ControllerBase
 {
-
   [HttpPost("login")]
-  public IActionResult Login([FromBody] LoginRequest request)
+  public IActionResult Login([FromHeader] string email, [FromHeader] string password)
   {
+    var request = new LoginRequest(email, password);
+
     var response = loginHandler.Handle(request);
+
+    if (!response.Success)
+    {
+      return BadRequest(response);
+    }
 
     return Ok(response);
   }

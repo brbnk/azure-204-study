@@ -20,3 +20,6 @@ CosmosDb/CosmosDb.Domain/obj/*
 
 CosmosDb/CosmosDb.Services/bin/*
 CosmosDb/CosmosDb.Services/obj/*
+
+CosmosDb/CosmosDb.Data/bin/*
+CosmosDb/CosmosDb.Data/obj/*

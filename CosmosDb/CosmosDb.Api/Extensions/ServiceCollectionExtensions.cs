@@ -1,7 +1,9 @@
 using System.Text;
 using CosmodeDb.Api.Handlers;
+using CosmodeDb.Data;
 using CosmodeDb.Domain.Security.Interfaces;
 using CosmodeDb.Domain.Settings;
+using CosmosDb.Data.Interfaces;
 using CosmosDb.Domain;
 using CosmosDb.Domain.Products.Interfaces;
 using CosmosDb.Domain.Security.Interfaces;
@@ -41,6 +43,13 @@ public static class ServiceCollectionExtensions
     services.AddScoped<IProductService, ProductService>();
     services.AddScoped<ITokenService, JwtTokenService>();
 
+    return services;
+  }
+
+  public static IServiceCollection ConfigureDatabase(this IServiceCollection services)
+  {
+    services.AddSingleton<IDatabase, InMemoryDatabase>();
+    
     return services;
   }
 
