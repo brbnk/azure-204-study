@@ -1,4 +1,4 @@
-namespace CosmosDb.Domain.Requests;
+namespace CosmosDb.Domain.Products.Requests;
 
 public sealed record CreateProductRequest(
   string Category,
