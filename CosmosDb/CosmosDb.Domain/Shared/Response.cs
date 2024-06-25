@@ -29,7 +29,7 @@ public class Response<T> : Response
 {
   public T Content { get; set; }
 
-  public static Response<T> Succeed(T content)
+  public Response<T> Succeed(T content)
   {
     return new() 
     {

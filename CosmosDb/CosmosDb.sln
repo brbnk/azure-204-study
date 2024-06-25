@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDb.Domain", "CosmosDb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDb.Services", "CosmosDb.Services\CosmosDb.Services.csproj", "{DE30D322-08A2-4A49-808F-9B3474EBF736}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDb.Data", "CosmosDb.Data\CosmosDb.Data.csproj", "{B887A82B-25F6-4EEF-98FA-98E74E73A156}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{DE30D322-08A2-4A49-808F-9B3474EBF736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE30D322-08A2-4A49-808F-9B3474EBF736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE30D322-08A2-4A49-808F-9B3474EBF736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B887A82B-25F6-4EEF-98FA-98E74E73A156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B887A82B-25F6-4EEF-98FA-98E74E73A156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B887A82B-25F6-4EEF-98FA-98E74E73A156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B887A82B-25F6-4EEF-98FA-98E74E73A156}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
