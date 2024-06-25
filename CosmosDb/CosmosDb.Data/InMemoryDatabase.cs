@@ -1,6 +1,4 @@
-using CosmodeDb.Data.Interfaces;
 using CosmodeDb.Data.Mock;
-using CosmodeDb.Domain.Account;
 using CosmosDb.Data.Interfaces;
 
 namespace CosmodeDb.Data;

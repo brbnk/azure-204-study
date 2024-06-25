@@ -8,6 +8,8 @@ public interface IUsersContainer
 
   public void Add(User item);
 
+  public User? GetById(string id);
+
   public User? GetByEmail(string email);
 
   public bool Exists(string email);

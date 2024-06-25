@@ -26,4 +26,9 @@ public sealed class UsersContainer : IUsersContainer
   {
     return _data.FirstOrDefault(u => u.Email.Equals(email));
   }
+
+    public User? GetById(string id)
+    {
+      return _data.FirstOrDefault(u => u.Id.Equals(id));
+    }
 }
