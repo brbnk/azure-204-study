@@ -1,4 +1,3 @@
-using CosmodeDb.Data.Mock;
 using CosmodeDb.Domain.Account;
 using CosmodeDb.Domain.Security.Interfaces;
 using CosmodeDb.Domain.Security.Requests;
@@ -26,10 +25,10 @@ public sealed class RegisterHandler(IDatabase database) : IRegisterHandler
 
         var hash = password.GenerateHash(password.Salt);
 
-        usersContainer.Add(new User(Name: payload.Name, 
-                                    Email: email.Address,
-                                    Password: hash, 
-                                    Roles: []));
+        usersContainer.Add(new User(name: payload.Name, 
+                                    email: email.Address,
+                                    password: hash, 
+                                    accountType: payload.AccountType));
 
         return Response.Succeed("The user was created with success!");
     }

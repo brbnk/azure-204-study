@@ -7,7 +7,7 @@ namespace CosmosDb.Api.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
-public sealed class AuthController(IRegisterHandler registerHandler, ILoginHandler loginHandler) : ControllerBase
+public sealed class AccountController(IRegisterHandler registerHandler, ILoginHandler loginHandler) : ControllerBase
 {
   [HttpPost("login")]
   public IActionResult Login([FromHeader] string email, [FromHeader] string password)

@@ -15,7 +15,7 @@ using Microsoft.OpenApi.Models;
 
 namespace CosmosDb.Api.Extensions;
 
-public static class ServiceCollectionExtensions
+public static class ServiceCollectionExtension
 {
   public const string API_VERSION = "v1";
   public const string API_TITLE = "Cosmos DB Lab API";
@@ -112,7 +112,8 @@ public static class ServiceCollectionExtensions
 
     services.AddAuthorizationBuilder()
             .AddPolicy(Constants.ADMIN_POLICY, p => p.RequireRole(Constants.ADMIN_ROLE))
-            .AddPolicy(Constants.STUDENT_POLICY, p => p.RequireRole(Constants.STUDENT_ROLE));
+            .AddPolicy(Constants.PREMIUM_POLICY, p => p.RequireRole(Constants.PREMIUM_ROLE))
+            .AddPolicy(Constants.FREE_POLICY, p => p.RequireRole(Constants.FREE_ROLE));
 
     return services;
   }
